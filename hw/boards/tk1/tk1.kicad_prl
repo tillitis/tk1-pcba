@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 49,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [],
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "001d020_ffffffff",
+    "visible_layers": "0021000_7ffffff8",
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "mta1-usb-v1.kicad_prl",
+    "filename": "tk1.kicad_prl",
     "version": 3
   },
   "project": {
