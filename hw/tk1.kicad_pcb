@@ -3477,7 +3477,7 @@
   (footprint "mta1:logo_OPENHARDWARE_4mmX4mm" (layer "B.Cu")
     (tstamp 5ef1b1ed-3b7c-451a-a2d6-8b9b1ac71528)
     (at 107.9 89.55)
-    (attr through_hole)
+    (attr through_hole exclude_from_bom)
     (fp_text reference "REF**" (at 0.4191 -2.4892 180) (layer "B.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
       (tstamp b4c8cd01-ae6b-4db6-83af-f4b3a3c723f7)
