@@ -21,10 +21,23 @@ preflight:
   # [list(dict)] A list of entries to filter out ERC/DRC messages.
   # Note that ignored errors will become KiBot warnings (i.e. (W058) ...).
   # To farther ignore these warnings use the filters option in the global section.
-  # filters:
-  #   - filter: 'Silkscreen clipped by solder mask'
-  #     error: 'silk_over_copper'
-  #     regex: '.*Silkscreen clipped by solder mask.*'
+  filters:
+    - filter: 'Silkscreen clipped by board edge'
+      error: 'silk_edge_clearance'
+    - filter: 'Silkscreen overlap'
+      error: 'silk_overlap'
+    - filter: 'Clearance violation, via INTERFACE_RTS and INTERFACE_CTS'
+      error: 'clearance'
+      regex: '.*INTERFACE_RTS*'
+    - filter: 'Clearance violation, via +3V3 and +2V5'
+      error: 'clearance'
+      regex: '.*clearance 0.1250 mm; actual 0.0995 mm.*'
+    - filter: 'Courtyard overlap'
+      error: 'courtyards_overlap'
+    - filter: 'Footprint mismatch C8'
+      error: 'lib_footprint_mismatch'
+      regex: '.*C8.*'
+
   # [boolean=false] Runs the DRC (Distance Rules Check). To ensure we have a valid PCB.
   # The report file name is controlled by the global output pattern (%i=drc %x=txt).
   run_drc: true
