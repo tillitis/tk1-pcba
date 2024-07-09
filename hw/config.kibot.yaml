@@ -37,6 +37,9 @@ preflight:
     - filter: 'Footprint mismatch C8'
       error: 'lib_footprint_mismatch'
       regex: '.*C8.*'
+    - filter: 'Footprint mismatch FPGA'
+      error: 'lib_footprint_mismatch'
+      regex: '.*QFN-48.*'
 
   # [boolean=false] Runs the DRC (Distance Rules Check). To ensure we have a valid PCB.
   # The report file name is controlled by the global output pattern (%i=drc %x=txt).
