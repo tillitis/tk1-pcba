@@ -31,7 +31,7 @@ developed.
 1. Clone this repository:
 2. Open the project file (`hw/tk1.kicad_pro`) in KiCad.
 
-alternativly download a release to get the generated output (Gerber,
+alternatively download a release to get the generated output (Gerber,
 schematics etc.) to be viewed in your preferred tool.
 
 ## KiCad and tools
@@ -44,7 +44,7 @@ The KiBot flow can be run locally using the Make target
 make run-kibot
 ```
 
-the prerequisits are `Podman`. `Docker` can also be used, see the
+the prerequisites are `Podman`. `Docker` can also be used, see the
 Makefile for details.
 
 
